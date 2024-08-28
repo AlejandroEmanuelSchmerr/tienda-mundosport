@@ -5,16 +5,14 @@
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
-    // Habilitar reporte de errores
+
     error_reporting(E_ALL);
     ini_set('display_errors', 1);
 
-    // Verificar si los parámetros están presentes
     if (isset($_POST['nombre_usuario']) && isset($_POST['clave'])) {
         $nombre_usuario = $_POST['nombre_usuario'];
         $clave = $_POST['clave'];
-        
-        // Depuración
+
         var_dump($nombre_usuario, $clave);
 
         require '../vendor/autoload.php';
@@ -22,7 +20,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $usuario = new tododeporte\Usuario;
         $resultado = $usuario->Login($nombre_usuario, $clave);
 
-        // Depuración
+        
         var_dump($resultado);
 
         if ($resultado) {

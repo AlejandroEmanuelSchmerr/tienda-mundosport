@@ -96,7 +96,7 @@ function subirFoto() {
     if (move_uploaded_file($_FILES['foto']['tmp_name'], $archivo)) {
         return $nombreArchivo;
     } else {
-        return null;  // O manejar el error de manera adecuada
+        return null;  
     }
 }
 

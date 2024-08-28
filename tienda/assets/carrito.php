@@ -4,10 +4,9 @@ session_start();
 require 'funciones.php';
 
 
-// Verificar si el usuario está autenticado
 
 if (!isset($_SESSION['cliente_dni'])) {
-    header('Location: registro.php'); // Redirigir a registro si no está autenticado
+    header('Location: registro.php'); 
     exit();
 }
 
@@ -19,20 +18,18 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
     
     
     if (!$resultado) {
-        header('Location: carrito.php'); // Redirigir al carrito de compras
+        header('Location: carrito.php'); 
         exit();
     }
 
-    if (isset($_SESSION['carrito'])) { // SI EL CARRITO EXISTE
-        // SI EL PRODUCTO EXISTE EN EL CARRITO
+    if (isset($_SESSION['carrito'])) { 
         if (array_key_exists($id, $_SESSION['carrito'])) {
             actualizarProducto($id);
         } else {
-            // SI EL PRODUCTO NO EXISTE EN EL CARRITO
+
             agregarProducto($resultado, $id);
         }
     } else {
-        // SI EL CARRITO NO EXISTE
         agregarProducto($resultado, $id);
     }
 }
@@ -154,7 +151,7 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
         <?php
             }
         ?>
-    </div> <!-- /container -->
+    </div>
     <?php include('includes/footer.html'); ?>
     <?php include('includes/js.html'); ?>
     <script src="assets/js/jquery.min.js"></script>

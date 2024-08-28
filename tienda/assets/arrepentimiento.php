@@ -4,7 +4,7 @@ require 'vendor/autoload.php';
 
 use tododeporte\Pedido;
 
-// Verifica que el cliente esté autenticado
+
 if (!isset($_SESSION['cliente_dni'])) {
     header('Location: login.php');
     exit();
@@ -17,7 +17,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     
     if ($pedido_id) {
         $pedido = new Pedido();
-        $resultado = $pedido->cambiarEstado($pedido_id, 'Anulado'); // Usa un método en Pedido para cambiar el estado
+        $resultado = $pedido->cambiarEstado($pedido_id, 'Anulado'); 
         
         if ($resultado) {
             $mensaje = "El pedido ha sido anulado correctamente.";

@@ -1,10 +1,10 @@
 <?php
 session_start();
 
-// Verifica que la sesión esté activa
+
 if (!isset($_SESSION['usuario_info']) || empty($_SESSION['usuario_info'])) {
     header('Location: ../index.php');
-    exit(); // Asegúrate de salir después de redirigir
+    exit();
 }
 ?>
 <!DOCTYPE html>
@@ -13,20 +13,15 @@ if (!isset($_SESSION['usuario_info']) || empty($_SESSION['usuario_info'])) {
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
-
     <title>Mundo Sport</title>
-
-    <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="../../assets/css/estilos.css">
   </head>
 
   <body>
 
-    <!-- Fixed navbar -->
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
@@ -53,11 +48,7 @@ if (!isset($_SESSION['usuario_info']) || empty($_SESSION['usuario_info'])) {
                 </ul>
             </li>
           </ul>
-
-
-
-
-        </div><!--/.nav-collapse -->
+        </div>
       </div>
     </nav>
 
@@ -72,7 +63,7 @@ if (!isset($_SESSION['usuario_info']) || empty($_SESSION['usuario_info'])) {
 
         <div class="row">
           <div class="col-md-12">
-             <fieldset>
+            <fieldset>
               <legend>Listado de Productos</legend>
                 <table class="table table-bordered">
                   <thead>
@@ -138,7 +129,7 @@ if (!isset($_SESSION['usuario_info']) || empty($_SESSION['usuario_info'])) {
                   </tbody>
 
                 </table>
-             </fieldset>
+            </fieldset>
           </div>
         </div>
 
@@ -149,12 +140,7 @@ if (!isset($_SESSION['usuario_info']) || empty($_SESSION['usuario_info'])) {
 
 
 
-    </div> <!-- /container -->
-
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
+    </div>
     <script src="../../assets/js/jquery.min.js"></script>
     <script src="../../assets/js/bootstrap.min.js"></script>
 

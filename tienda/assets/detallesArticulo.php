@@ -10,7 +10,7 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
     $info_producto = $producto->mostrarPorId($id);
 
     if ($info_producto) {
-        // Aquí puedes usar los detalles del producto para mostrarlos en la página
+        
         ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -41,7 +41,7 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
 
         <div class="container single_product_container">
             <div class="row">
-                <!-- Imagen del producto -->
+                
                 <div class="col-lg-6">
                     <div class="single_product_image">
                         <?php if (!empty($info_producto['foto']) && file_exists('upload/'.$info_producto['foto'])): ?>
@@ -52,7 +52,7 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
                     </div>
                 </div>
 
-                <!-- Detalles del producto -->
+                
                 <div class="col-lg-6">
                     <div class="product_details_title">
                         <h2 id="titleArticulo">

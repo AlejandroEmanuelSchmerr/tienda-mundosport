@@ -2,10 +2,7 @@
 include('config/session_start.php');
 include('config/config.php');
 
-/**
- * Funcion para obtener todos los productos
- * de mi tienda
- */
+
 function getProductData($con)
 {
     $sqlProductos = ("
@@ -35,9 +32,7 @@ function getProductData($con)
     return $queryProductos;
 }
 
-/**
- * Detalles del producto seleccionado
- */
+
 function detalles_producto_seleccionado($con, $id)
 {
     $sqlDetalleProducto = ("
@@ -70,9 +65,7 @@ function detalles_producto_seleccionado($con, $id)
     return $queryProductosSeleccionado;
 }
 
-/**
- * Funciona para validar si el carrito tiene algun producto
- */
+
 function validando_carrito()
 {
     if (isset($_SESSION['tokenStoragel']) == "") {
@@ -94,9 +87,7 @@ function validando_carrito()
     }
 }
 
-/**
- * Retornando productos del carrito de compra
- */
+
 function mi_carrito_de_compra($con)
 {
     if (isset($_SESSION['tokenStoragel']) != "") {

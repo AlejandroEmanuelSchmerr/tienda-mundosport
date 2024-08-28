@@ -161,9 +161,6 @@ if (!isset($_SESSION['usuario_info']) OR empty($_SESSION['usuario_info'])) {
     </div>
     <button type="submit" class="btn btn-primary">Actualizar Estado</button>
 </form>
-            <!-- Formulario para actualizar el estado del pedido -->
-            
-                <!-- Formulario para eliminar el pedido -->
                 <form action="acciones.php" method="POST" style="margin-top: 20px;">
                     <input type="hidden" name="accion" value="eliminar_pedido">
                     <input type="hidden" name="id" value="<?php echo $id; ?>">

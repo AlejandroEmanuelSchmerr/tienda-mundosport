@@ -13,15 +13,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $pedido = new Pedido();
         $detalle_pedido = $pedido->mostrarDetallePorIdPedido($pedido_id);
 
-        // Verifica si el pedido existe y está en estado 'pendiente'
+        
         if ($detalle_pedido && isset($detalle_pedido[0]['estado']) && $detalle_pedido[0]['estado'] === 'pendiente') {
-            // Calcula el total del pedido sumando los precios de todos los productos
             $total = 0;
             foreach ($detalle_pedido as $detalle) {
                 $total += $detalle['precio'] * $detalle['cantidad'];
             }
 
-            // Configura los parámetros para la solicitud de pago a PayPal
+            
             $paypalUrl = 'https://www.paypal.com/cgi-bin/webscr'; // Para producción
             //$paypalUrl = 'https://www.sandbox.paypal.com/cgi-bin/webscr'; // Para pruebas
 
@@ -36,7 +35,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 'notify_url' => 'http://localhost/tienda/assets/paypal_inp.php'
             ];
 
-            // Redirige al usuario a PayPal con los parámetros de pago
+            
             header('Location: ' . $paypalUrl . '?' . http_build_query($params));
             exit();
         } else {

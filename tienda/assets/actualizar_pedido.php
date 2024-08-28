@@ -5,7 +5,6 @@ require 'funciones.php';
 
 use tododeporte\Pedido;
 
-// Verificar que el cliente esté autenticado
 if (!isset($_SESSION['cliente_dni'])) {
     header('Location: login.php');
     exit();
@@ -18,12 +17,12 @@ if (!$pedido_id) {
 }
 
 $pedido = new Pedido();
-$pedidoDetalles = $pedido->mostrarDetallePorIdPedido($pedido_id); // Cambia esto si es necesario
+$pedidoDetalles = $pedido->mostrarDetallePorIdPedido($pedido_id); 
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     foreach ($_POST['cantidad'] as $detalle_id => $nueva_cantidad) {
-        // Asegurate de que la cantidad sea valida antes de actualizar
-        $nueva_cantidad = intval($nueva_cantidad); // Asegurate de que sea un numero entero
+        
+        $nueva_cantidad = intval($nueva_cantidad); 
         if ($nueva_cantidad > 0) {
             $pedido->actualizarCantidad($detalle_id, $nueva_cantidad);
         }

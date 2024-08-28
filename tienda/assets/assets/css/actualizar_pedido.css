@@ -19,7 +19,6 @@ h1 {
     color: #444;
 }
 
-/* Form Styles */
 form {
     width: 80%;
     max-width: 700px;
@@ -30,7 +29,7 @@ form {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Table Styles */
+
 table {
     width: 100%;
     border-collapse: collapse;
@@ -69,7 +68,7 @@ input[type="number"] {
     border-radius: 4px;
 }
 
-/* Button Styles */
+
 button {
     display: block;
     width: 100%;
@@ -87,7 +86,7 @@ button:hover {
     background-color: #218838;
 }
 
-/* Link Styles */
+
 a {
     display: block;
     text-align: center;

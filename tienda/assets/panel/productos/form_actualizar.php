@@ -4,20 +4,18 @@ require '../../vendor/autoload.php';
 
 use tododeporte\Producto;
 
-// Verifica si se ha enviado un ID de producto
+
 if (!isset($_GET['id']) || empty($_GET['id'])) {
     die('ID del producto no proporcionado.');
 }
 
 $producto_id = $_GET['id'];
 
-// Crear una instancia de la clase Producto
 $producto = new Producto;
 
-// Obtener los datos del producto
+
 $resultado = $producto->mostrarDetallesPorId($producto_id);
 
-// Verificar si se encontró el producto
 if (!$resultado) {
     die('Producto no encontrado.');
 }

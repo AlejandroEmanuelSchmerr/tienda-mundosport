@@ -11,12 +11,9 @@ $pedido = new tododeporte\Pedido;
 
 $facturas_por_fecha = $pedido->mostrarFacturasOrdenadasPorFecha();
 $facturas_por_cliente = $pedido->mostrarFacturasOrdenadasPorCliente();
-$facturas_pendientes = $pedido->mostrarFacturasPendientes(); // Agregado
+$facturas_pendientes = $pedido->mostrarFacturasPendientes(); 
 
-// Para depurar, puedes descomentar estas líneas para ver los datos crudos
-// echo '<pre>'; print_r($facturas_por_fecha); echo '</pre>';
-// echo '<pre>'; print_r($facturas_por_cliente); echo '</pre>';
-// echo '<pre>'; print_r($facturas_pendientes); echo '</pre>';
+
 ?>
 <!DOCTYPE html>
 <html lang="en">

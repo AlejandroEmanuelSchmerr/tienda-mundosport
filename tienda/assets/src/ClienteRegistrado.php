@@ -17,7 +17,7 @@ class ClienteRegistrado {
 
   
     public function registrar($_params) {
-        // Verificar si el email ya existe
+        
         $sql = "SELECT COUNT(*) FROM clientes_registrados WHERE email = :email";
         $resultado = $this->cn->prepare($sql);
         $resultado->execute([':email' => $_params['email']]);
@@ -32,18 +32,18 @@ class ClienteRegistrado {
         
         $resultado = $this->cn->prepare($sql);
     
-        // Usar el password hash que ya se generó
+        
         $_array = array(
             ":dni" => $_params['dni'],
             ":nombre" => $_params['nombre'],
             ":apellidos" => $_params['apellidos'],
             ":email" => $_params['email'],
-            ":password" => $_params['password'], // El hash ya está generado en el código de registro
+            ":password" => $_params['password'], 
             ":telefono" => $_params['telefono'],
             ":comentario" => $_params['comentario']
         );
     
-        return $resultado->execute($_array); // Retorna true o false
+        return $resultado->execute($_array); 
     }
     public function obtenerClientePorDni($dni) {
         $sql = "SELECT dni, nombre, apellidos, telefono, email FROM clientes_registrados WHERE dni = :dni";
@@ -61,7 +61,7 @@ class ClienteRegistrado {
         if ($user) {
             return $user;
         } else {
-            return false; // Devuelve false si el usuario no es encontrado
+            return false; 
         }
     }
 

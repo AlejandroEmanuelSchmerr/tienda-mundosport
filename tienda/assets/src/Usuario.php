@@ -21,9 +21,9 @@ class Usuario {
         $resultado = $this->cn->prepare($sql);
         $resultado->execute(array(":nombre" => $nombre));
 
-        $usuario = $resultado->fetch(\PDO::FETCH_ASSOC); // Usa FETCH_ASSOC para obtener un array asociativo
+        $usuario = $resultado->fetch(\PDO::FETCH_ASSOC);
 
-        // Verificar la contraseña usando el hash almacenado
+       
         if ($usuario && password_verify($clave, $usuario['clave'])) {
             return array('nombre_usuario' => $usuario['nombre_usuario']);
         }

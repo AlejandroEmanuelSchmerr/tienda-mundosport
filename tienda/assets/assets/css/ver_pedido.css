@@ -1,4 +1,4 @@
-/* General Styles */
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f4f7f9;
@@ -19,11 +19,11 @@ h1 {
     color: #444;
 }
 
-/* Table Styles */
+
 table {
     width: 80%;
     max-width: 700px;
-    margin: 0 auto 20px auto; /* Center the table with margin */
+    margin: 0 auto 20px auto; 
     border-collapse: collapse;
     background-color: #ffffff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -54,7 +54,7 @@ tbody tr:hover {
     background-color: #f1f1f1;
 }
 
-/* Link Styles */
+
 a {
     display: inline-block;
     text-align: center;
