@@ -1,0 +1,38 @@
+{
+    "name": "tododeporte/tienda",
+    "description": "creacion de tienda",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "emanuel schmer",
+            "email": "emanuelschmer@hotmail.com"
+        },
+        {
+            "name": "valentino marchetti"
+            
+            
+        },
+        {
+            "name": "juan tuminnelli"
+        },
+        {
+            "name": "josemir rodriguez"
+        },
+        {
+            "name": "santiago gerbant"
+        }
+
+    ],
+    "require": {},
+    "autoload":{
+        "psr-4":{
+            "tododeporte\\":"src/"
+        }
+    }
+
+
+
+
+
+}

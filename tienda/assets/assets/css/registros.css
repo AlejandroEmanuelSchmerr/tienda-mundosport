@@ -1,0 +1,111 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales del body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+/* Estilo del contenedor del formulario */
+.container {
+    max-width: 800px;
+    width: 100%;
+}
+
+/* Estilo del formulario */
+form {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: auto;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* Estilo de los encabezados */
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #444;
+    text-align: center;
+}
+
+/* Estilo de los labels */
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+/* Estilo de los inputs y textarea */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Estilo del textarea */
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Estilo del botón de envío */
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    grid-column: span 2; /* Ocupa ambas columnas */
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo del mensaje de error o éxito */
+p {
+    color: #d9534f;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 15px;
+    grid-column: span 2; /* Ocupa ambas columnas */
+}
+
+/* Estilo del enlace */
+a {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    color: #007bff;
+    text-decoration: none;
+    grid-column: span 2; /* Ocupa ambas columnas */
+}
+
+a:hover {
+    text-decoration: underline;
+}

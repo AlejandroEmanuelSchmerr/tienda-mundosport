@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: sans-serif;
+    list-style: none;
+    text-decoration: none;   
+    
+}
+  
+body{
+    background-color: #fffffff4;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 5%;
+    background-color: white;
+}
+                                                
+
+.logo img {
+    max-width: 120px;
+    height: auto;
+}
+
+.navmenu {
+    display: flex;
+}
+
+.navmenu a {
+    color: #2c2c2c;
+    font-size: 16px;
+    padding: 8px 15px;
+    font-weight: 400;
+    transition: all .42s ease;
+}
+
+.navmenu a:hover {
+    color: rgb(43, 205, 226);
+    transform: scale(1.1);
+}
+
+
+.nav-icon {
+    display: flex;
+    align-items: center;
+}
+
+.nav-icon i {
+    margin-right: 15px;
+    color: #2c2c2c;
+    font-size: 24px;
+    font-weight: 400;
+    transition: all .42s ease;
+}
+
+.nav-icon i:hover {
+    transform: scale(1.1);
+    color: #e7ee1c;
+}
+
+#menu-icon {
+    font-size: 40px;
+    color: #2c2c2c;
+    z-index: 1001;
+    cursor: pointer;
+}
+
+/* acerca.css */
+.acerca-section {
+    margin: 50px;
+    padding: 20px;
+    background-color: #f5f5f5; /* Ajusta según el diseño */
+    text-align: center;
+    border: 2px solid rgba(0, 0, 0, 0.154);
+}
+
+.acerca-section h1 {
+    margin: 0;
+    padding: 20px 0;
+    font-size: 40px;
+    font-weight: bold;
+}
+.acerca-section h1 {
+    margin: 0;
+    padding: 20px 0;
+    font-size: 40px;
+    font-weight: bold;
+    position: relative; /* Permite la posición relativa del pseudo-elemento */
+    display: inline-block; /* Ajusta el ancho del contenedor al contenido */
+    z-index: 1; /* Asegura que el texto esté por encima del pseudo-elemento */
+}
+
+.acerca-section h1::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: hsl(200, 100%, 80%);
+    z-index: -1; /* Coloca el pseudo-elemento detrás del texto */
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform .9s ease;
+}
+
+.acerca-section h1:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+
+  
+  @media (orientation: landscape) {
+    body {
+      grid-auto-flow: column;
+    }
+  }
+  
+.acerca-section span{
+    font-size: 18px;
+    transition: all .42s ease;
+}
+.acerca-section span:hover{
+    transform: scale(1.3);
+    color: #f6cf40;
+    font-weight: bold;
+
+}
+h1{
+    font-size: 16px;
+}
+.contact{
+    background-color: #f3f4f6;
+}
+
+.word{
+    font-size: 25px;
+    font-weight: 600;
+}
+.word:hover{
+    color: #f6cf40;
+    transition: all .40s;
+}
+.contact-info{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, auto));
+    gap: 3rem;
+}
+
+.contact-info h4{
+    color: #2c2c2c;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.contact-info p{
+    color: #565656;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    cursor:pointer;
+    transition: all .42s;
+
+}
+
+.contact-info p:hover{
+    color: #ee1c47;
+}
+
+.social-icon i{
+    color: #565656;
+    margin-right: 10px;
+    font-size: 20px;
+    transition: all .42s;
+}
+
+.social-icon i:hover{
+    transform: scale(1.3);
+}
+
+.end-text{
+    margin-bottom: 10px;
+    background-color: rgb(255, 242, 192);
+    text-align: center;
+    padding: 20px;
+}
+
+.end-text p, a{
+    color: #111;
+    text-transform: capitalize;
+}
+section {
+    padding: 5% 10%;
+    margin-top: 110px;
+}
+.productos{
+    font-size: 20px;
+    top: 10px;
+    text-align: center;
+    max-width: 1500px;
+    text-decoration: underline;
+    transition: all .99s;
+}
+.productos a{
+    color: #2c2c2c;
+}
+.productos:hover{
+    transform: scale(1.2);
+}

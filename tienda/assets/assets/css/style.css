@@ -1,0 +1,366 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: sans-serif;
+    list-style: none;
+    text-decoration: none;   
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 5%;
+    background-color: white;
+}
+                                                
+
+.logo img {
+    max-width: 120px;
+    height: auto;
+}
+
+.navmenu {
+    display: flex;
+}
+
+.navmenu a {
+    color: #2c2c2c;
+    font-size: 16px;
+    padding: 8px 15px;
+    font-weight: 400;
+    transition: all .42s ease;
+}
+
+.navmenu a:hover {
+    color: rgb(43, 205, 226);
+    transform: scale(1.1);
+}
+
+
+.nav-icon {
+    display: flex;
+    align-items: center;
+}
+
+.nav-icon i {
+    margin-right: 15px;
+    color: #2c2c2c;
+    font-size: 24px;
+    font-weight: 400;
+    transition: all .42s ease;
+}
+
+.nav-icon i:hover {
+    transform: scale(1.1);
+    color: #e7ee1c;
+}
+
+#menu-icon {
+    font-size: 40px;
+    color: #2c2c2c;
+    z-index: 1001;
+    cursor: pointer;
+}
+
+section {
+    padding: 5% 10%;
+    margin-top: 110px;
+}
+
+.main-home {
+    width: 100%;
+    height: 75vh;
+    background-image: url(../imagenes/adidas.png);
+    background-position: top; /* Ajusta la posición de la imagen aquí */
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    color: white;
+    padding-top: 20px; /* Ajusta el espacio superior si es necesario */
+}
+.main-text h5 {
+    color: beige;
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.main-text h1 {
+    color: #ffffff;
+    font-size: 65px;
+    text-transform: capitalize;
+    line-height: 1.1;
+    font-weight: 600;
+    margin: 6px 0 10px;
+}
+
+.main-text p {
+    color: beige;
+    font-size: 20px;
+    font-style: italic;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.main-btn {
+    display: inline-block;
+    color: white;
+    font-size: 20px;
+    text-transform: capitalize;
+    border: 2px solid beige;
+    padding: 12px 25px;
+    transition: all .42s ease;
+}
+
+.main-btn:hover {
+    background-color: #000000;
+    color: #fddd68;
+}
+
+.main-btn i {
+    vertical-align: middle;
+}
+
+.down-arrow {
+    position: absolute;
+    top: 75%;
+    right: 11%;
+}
+
+.down-arrow2 {
+    position: absolute;
+    
+    top: 388%;
+    right: 11%;
+}
+.down i {
+    font-size: 30px;
+    color: #000000;
+    border: 3px solid black;
+    border-radius: 50px;
+    padding: 12px 12px;
+}
+
+.down i:hover {
+    background-color: #000000;
+    color: white;
+    transition: all .42s ease;
+}
+
+.center-text h2 {
+    color: #000000;
+    font-size: 28px;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.center-text span {
+    color: #fddd68;
+}
+
+.products {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.row {
+    position: relative;
+    transition: all .40s;
+}
+
+.row img {
+    width: 100%;
+    height: auto;
+}
+.row img:hover{
+    transform: scale(1.1) !important;
+}
+
+.image-container {
+    position: sticky;
+}
+
+.product-item {
+    
+    text-align: left;
+    margin: 0; /* Asegúrate de que no haya margen */
+    padding: 0; /* Asegúrate de que no haya padding extra */
+}
+
+
+.product-text h5{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fddd68;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+}
+
+.heart-icon{
+    position: absolute;
+    right: 0;
+    font-size: 20px;
+}
+
+.heart-icon:hover{
+    color: #ee1c47;
+}
+
+.ratting i{
+    color: #f6cf40;
+    font-size: 18px;
+}
+
+.price a{
+    color: #000000;
+    font-size: 20px;
+    font-weight: 400;
+}
+.link, p{
+    font-weight: bold !important;
+    
+}
+
+.price a:hover{
+    color: #6a6565;
+}
+
+.contact{
+    background-color: #f3f4f6;
+}
+
+.word{
+    font-size: 25px;
+    font-weight: 600;
+}
+.word:hover{
+    color: #f6cf40;
+    transition: all .40s;
+}
+.contact-info{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, auto));
+    gap: 3rem;
+}
+
+.contact-info h4{
+    color: #2c2c2c;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.contact-info p{
+    color: #565656;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    cursor:pointer;
+    transition: all .42s;
+
+}
+
+.contact-info p:hover{
+    color: #ee1c47;
+}
+
+.social-icon i{
+    color: #565656;
+    margin-right: 10px;
+    font-size: 20px;
+    transition: all .42s;
+}
+
+.social-icon i:hover{
+    transform: scale(1.3);
+}
+
+.end-text{
+    margin-bottom: 10px;
+    background-color: rgb(255, 242, 192);
+    text-align: center;
+    padding: 20px;
+}
+
+.end-text p{
+    color: #111;
+    text-transform: capitalize;
+}
+
+.productos{
+    font-size: 20px;
+    top: 10px;
+    text-align: center;
+    max-width: 1500px;
+    text-decoration: underline;
+    transition: all .99s;
+}
+.productos a{
+    color: #2c2c2c;
+}
+.productos:hover{
+    transform: scale(1.2);
+}
+
+@media(max-width:890px){
+    header{
+        padding: 20px 3%;
+        transition: .4s; 
+    }
+}
+
+@media(max-width:630px){
+    .main-text h1{
+        font-size: 50px;
+        transition: .4s;
+    }
+    .main-text p{
+        font-size: 18px;
+        transition: .4s;
+    }
+    .main-btn{
+        padding: 10px 20px;
+        transition: .4s;
+    }
+}
+
+@media(max-width:750px){
+    .navmenu{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 300px;
+        height: 1300vh;
+        background: #fddd68c9;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 120px 30px;
+        transition: all .42s;
+        color: #000000;
+        
+    }
+    .navmenu a{
+        display: block;
+        margin: 18px 0;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .navmenu.open{
+        right: 0;
+    }
+}

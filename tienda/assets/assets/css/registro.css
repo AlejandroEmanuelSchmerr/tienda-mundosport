@@ -1,0 +1,147 @@
+:root {
+    --primary-color: #2563eb; /* Azul principal */
+    --primary-hover-color: #1e3a8a; /* Azul oscuro para hover */
+    --input-border-color: #d1d5db; /* Gris claro para bordes de input */
+    --input-background-color: #f9fafb; /* Fondo claro para inputs */
+    --text-color: #111827; /* Gris oscuro para el texto */
+    --muted-text-color: #6b7280; /* Gris medio para texto sutil */
+    --background-color: #f3f4f6; /* Fondo gris claro */
+    --card-background-color: #ffffff; /* Fondo blanco para tarjetas */
+    --shadow-color: rgba(0, 0, 0, 0.1); /* Sombra suave */
+    --radius: 0.375rem; /* Radio de borde para esquinas redondeadas */
+}
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Contenedor principal */
+.w-full {
+    width: 100%;
+}
+
+.max-w-md {
+    max-width: 28rem;
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mt-10 {
+    margin-top: 2.5rem;
+}
+
+/* Título */
+.text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+.font-bold {
+    font-weight: 700;
+}
+
+.mb-6 {
+    margin-bottom: 1.5rem;
+}
+
+/* Espaciado entre elementos del formulario */
+.space-y-4 > * + * {
+    margin-top: 1rem;
+}
+
+.space-y-2 > * + * {
+    margin-top: 0.5rem;
+}
+
+/* Etiquetas de los campos */
+.text-sm {
+    font-size: 0.875rem;
+}
+
+.font-medium {
+    font-weight: 500;
+}
+
+/* Inputs */
+.block {
+    display: block;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.p-2 {
+    padding: 0.5rem;
+}
+
+.border {
+    border-width: 1px;
+}
+
+.border-gray-300 {
+    border-color: var(--input-border-color);
+}
+
+.rounded-md {
+    border-radius: var(--radius);
+}
+
+.bg-gray-100 {
+    background-color: var(--input-background-color);
+}
+
+/* Botón de registro */
+.bg-blue-600 {
+    background-color: var(--primary-color);
+}
+
+.text-white {
+    color: #ffffff;
+}
+
+.font-semibold {
+    font-weight: 600;
+}
+
+.py-2 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.hover\:bg-blue-700:hover {
+    background-color: var(--primary-hover-color);
+}
+
+/* Sombra para el formulario */
+.shadow-md {
+    box-shadow: 0 4px 6px var(--shadow-color);
+}
+
+/* Estilo para el contenedor del formulario */
+.bg-white {
+    background-color: var(--card-background-color);
+}
+
+.rounded-md {
+    border-radius: var(--radius);
+}
