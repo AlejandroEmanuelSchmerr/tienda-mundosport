@@ -20,6 +20,7 @@ if (!isset($_SESSION['usuario_info']) OR empty($_SESSION['usuario_info'])) {
     <title>Mundo Sport</title>
     <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="../../assets/css/estilos.css">
+    <link rel="icon" type="image/x-icon" href="../assets/images/logo.png">
   </head>
 
   <body>

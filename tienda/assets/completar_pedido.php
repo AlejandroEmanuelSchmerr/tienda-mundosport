@@ -5,7 +5,7 @@ require 'funciones.php';
 require 'vendor/autoload.php';
 require 'funciones.php';
 
-// Calcula el monto total
+
 $total = calcularTotal();
 
 

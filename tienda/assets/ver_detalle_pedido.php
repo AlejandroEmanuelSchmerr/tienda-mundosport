@@ -30,6 +30,7 @@ if (!$detalles) {
     <title>Detalle del Pedido</title>
     <link rel="icon" type="image/x-icon" href="../assets/images/logo.png">
     <link rel="stylesheet" href="assets/css/ver_pedido.css">
+    <link rel="icon" type="image/x-icon" href="../assets/images/logo.png">
 </head>
 <body>
     <h1>Detalles del Pedido</h1>

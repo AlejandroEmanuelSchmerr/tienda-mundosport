@@ -12,6 +12,7 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pago Cancelado</title>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="icon" type="image/x-icon" href="../assets/images/logo.png">
 </head>
 <body>
     <?php include('header.php'); ?>

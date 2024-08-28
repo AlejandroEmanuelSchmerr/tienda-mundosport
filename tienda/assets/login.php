@@ -46,7 +46,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <head>
     <meta charset="UTF-8">
     <title>Login</title>
-    <link rel="stylesheet" href="assets/css/login_cliente.css"> <!-- Asegúrate de vincular el CSS -->
+    <link rel="stylesheet" href="assets/css/login_cliente.css"> 
 </head>
 <body>
     <div class="container">
@@ -63,7 +63,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             
             <button type="submit">Ingresar</button>
         </form>
-        <a href="registro.php">Crear una cuenta</a> <!-- Enlace para redirigir al formulario de registro -->
+        <a href="registro.php">Crear una cuenta</a>
     </div>
 </body>
 </html>

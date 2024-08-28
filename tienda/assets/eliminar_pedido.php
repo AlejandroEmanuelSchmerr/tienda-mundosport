@@ -5,7 +5,6 @@ require 'funciones.php';
 
 use tododeporte\Pedido;
 
-// Verificar que el cliente esté autenticado
 if (!isset($_SESSION['cliente_dni'])) {
     header('Location: login.php');
     exit();

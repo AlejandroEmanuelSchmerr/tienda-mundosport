@@ -15,7 +15,7 @@ if(! isset($_SESSION['usuario_info'])OR empty($_SESSION['usuario_info']))
     <meta name="author" content="">
 
     <title>Mundo Sport</title>
-
+    <link rel="icon" type="image/x-icon" href="../assets/images/logo.png">
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/css/estilos.css">
   </head>

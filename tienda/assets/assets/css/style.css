@@ -194,8 +194,8 @@ section {
 .product-item {
     
     text-align: left;
-    margin: 0; /* Asegúrate de que no haya margen */
-    padding: 0; /* Asegúrate de que no haya padding extra */
+    margin: 0;
+    padding: 0; 
 }
 
 

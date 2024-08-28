@@ -49,6 +49,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <meta charset="UTF-8">
     <title>Registro de Cliente</title>
     <link rel="stylesheet" href="assets/css/registros.css">
+    <link rel="icon" type="image/x-icon" href="../assets/images/logo.png">
 </head>
 <body>
     

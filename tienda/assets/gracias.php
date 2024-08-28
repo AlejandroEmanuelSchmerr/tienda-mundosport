@@ -18,7 +18,7 @@
 
   <body>
 
-    <!-- Fixed navbar -->
+
     <?php
         session_start();
         require 'funciones.php';
@@ -43,12 +43,7 @@
         </div>
       
 
-    </div> <!-- /container -->
-
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
+    </div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
 

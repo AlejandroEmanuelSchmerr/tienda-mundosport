@@ -8,7 +8,7 @@ if (!function_exists('agregarProducto')) {
             'nombre' => $resultado['nombre'],
             'foto' => $resultado['foto'],
             'precio' => $resultado['precio'],
-            'cantidad' => $cantidad // Usar la variable $cantidad pasada a la función
+            'cantidad' => $cantidad 
         );
     }
 }
